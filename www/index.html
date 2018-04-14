@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#031927">
+    <meta name="apple-mobile-web-app-title" content="Menumizer">
+    <meta name="msapplication-TileColor" content="#f05742">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#031927">
+
+    <meta property="og:url" content="https://snickdx.me/music" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vybzer" />
+    <meta property="og:description" content="The app for Vybz" />
+    <meta property="og:image" content="assets/icon/apple-icon-152x152.png" />
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-icon-180x180.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/apple-icon-precomposed.png">
+    <link rel="apple-touch-startup-image" href="assets/icon/apple-icon-precomposed.png">
+
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icon/512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link rel="icon" href="assets/icon/favicon.ico">
+
+
+    <title>Vybzer</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://fezvrasta.github.io/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+
+     <link href="snackbar.min.css" rel=stylesheet>
+ 
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto text-center">
+       
+          <h3 class="text-center">Vybzer</h3>
+          <p class="text-center">Let's Vybes</p>
+     
+      </header>
+
+      <main role="main" class="inner cover">
+      	<div class="container">
+      		<div class="col">
+      			<div>
+      				<button type="button" onclick="play('mario')" class="btn btn-primary btn-lg btn-block">Mario</button>
+      			</div>
+      			<div>
+					<button type="button" onclick="play('starwars')" class="btn btn-primary btn-lg btn-block">Star Wars</button>
+      			</div>
+      			<div>
+					<button type="button" onclick="play('powerrangers')" class="btn btn-primary btn-lg btn-block">Power Rangers</button>
+      			</div>
+      		</div>
+      	</div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Made by Nicholas Mendez<a href="https://twitter.com/snickdx"> @snickdx</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://fezvrasta.github.io/bootstrap-material-design/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://fezvrasta.github.io/bootstrap-material-design/assets/js/vendor/popper.min.js"></script>
+    <script src="https://fezvrasta.github.io/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
+    <script src="snackbar.min.js"></script>
+
+    <script type="text/javascript">
+
+    	let songs = {
+    		"mario":[125, 75, 125, 275, 200, 275, 125, 75, 125, 275, 200, 600, 200, 600 ],
+    		"starwars":[500, 110, 500, 110, 450, 110, 200, 110, 200, 110, 170, 40, 450, 110, 200, 110, 170, 40, 500],
+    		"powerrangers": [150, 150, 150, 150, 75, 75, 150, 150, 150, 150, 450]
+    	}
+
+    	function myAlert(song){
+    		var options =  {
+			    content: "Now Playing " +song, // text of the snackbar
+			    style: "toast", // add a custom class to your snackbar
+			    timeout: 1000 // time in milliseconds after the snackbar autohides, 0 is disabled
+			}
+
+			$.snackbar(options);
+    	}
+
+    	function play(song){
+    		myAlert("Playing "+song);
+    		navigator.vibrate(songs[song]);
+    	}
+
+    
+    </script>
+  </body>
+</html>
